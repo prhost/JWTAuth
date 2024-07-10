@@ -1,12 +1,12 @@
 {
-    "name": "reazzon/jwtauth-plugin",
+    "name": "prhost/jwtauth-plugin",
     "type": "october-plugin",
     "description": "No description provided yet...",
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
         "composer/installers": "~1.0",
-        "php-open-source-saver/jwt-auth": "1.4.2"
+        "php-open-source-saver/jwt-auth": "^2.1.0"
     },
     "extra": {
         "laravel": {
