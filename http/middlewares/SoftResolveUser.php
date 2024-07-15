@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace ReaZzon\JWTAuth\Http\Middlewares;
+namespace Prhost\JWTAuth\Http\Middlewares;
 
-use ReaZzon\JWTAuth\Classes\Guards\JWTGuard;
+use Prhost\JWTAuth\Classes\Guards\JWTGuard;
 
 /**
  * Class SoftResolveUser
- * @package ReaZzon\JWTAuth\Http\Middlewares
+ * @package Prhost\JWTAuth\Http\Middlewares
  */
 class SoftResolveUser
 {

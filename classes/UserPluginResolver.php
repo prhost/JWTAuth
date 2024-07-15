@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes;
+namespace Prhost\JWTAuth\Classes;
 
 use Model;
-use ReaZzon\JWTAuth\Classes\Contracts\Plugin;
+use Prhost\JWTAuth\Classes\Contracts\Plugin;
 use System\Classes\PluginManager;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 use October\Rain\Support\Traits\Singleton;
 use October\Rain\Auth\Manager as AuthManager;
-use ReaZzon\JWTAuth\Classes\Contracts\UserPluginResolver as UserPluginResolverContract;
+use Prhost\JWTAuth\Classes\Contracts\UserPluginResolver as UserPluginResolverContract;
 
 /**
  *
@@ -76,6 +76,6 @@ final class UserPluginResolver implements UserPluginResolverContract
      */
     public function getSupportPlugins(): array
     {
-        return config('reazzon.jwtauth::plugins');
+        return config('prhost.jwtauth::plugins');
     }
 }

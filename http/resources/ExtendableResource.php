@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Http\Resources;
+namespace Prhost\JWTAuth\Http\Resources;
 
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Support\Arrayable;

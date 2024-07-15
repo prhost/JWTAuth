@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes\Contracts;
+namespace Prhost\JWTAuth\Classes\Contracts;
 
 use October\Rain\Auth\Manager as AuthManager;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;

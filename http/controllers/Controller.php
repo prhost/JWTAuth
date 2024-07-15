@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Http\Controllers;
+namespace Prhost\JWTAuth\Http\Controllers;
 
-use ReaZzon\JWTAuth\Classes\Contracts\UserPluginResolver;
-use ReaZzon\JWTAuth\Classes\Guards\JWTGuard;
+use Prhost\JWTAuth\Classes\Contracts\UserPluginResolver;
+use Prhost\JWTAuth\Classes\Guards\JWTGuard;
 
 /**
  * Base JWTAuth Controller

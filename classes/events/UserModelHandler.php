@@ -1,8 +1,8 @@
-<?php namespace ReaZzon\JWTAuth\Classes\Events;
+<?php namespace Prhost\JWTAuth\Classes\Events;
 
 use Illuminate\Contracts\Auth\Authenticatable;
-use ReaZzon\JWTAuth\Classes\Contracts\UserPluginResolver;
-use ReaZzon\JWTAuth\Classes\Behaviors\UserSubjectBehavior;
+use Prhost\JWTAuth\Classes\Contracts\UserPluginResolver;
+use Prhost\JWTAuth\Classes\Behaviors\UserSubjectBehavior;
 
 class UserModelHandler
 {

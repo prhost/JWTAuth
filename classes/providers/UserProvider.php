@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes\Providers;
+namespace Prhost\JWTAuth\Classes\Providers;
 
 use Model;
 use Illuminate\Support\Str;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\UserProvider as BaseUserProvider;
-use ReaZzon\JWTAuth\Classes\Contracts\UserPluginResolver;
+use Prhost\JWTAuth\Classes\Contracts\UserPluginResolver;
 
 /**
  * Class UserProvider
- * @package ReaZzon\JWTAuth\Classes\Providers
+ * @package Prhost\JWTAuth\Classes\Providers
  */
 class UserProvider implements BaseUserProvider
 {

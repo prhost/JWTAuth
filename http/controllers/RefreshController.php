@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Http\Controllers;
+namespace Prhost\JWTAuth\Http\Controllers;
 
 use October\Rain\Argon\Argon;
-use ReaZzon\JWTAuth\Classes\Dto\TokenDto;
+use Prhost\JWTAuth\Classes\Dto\TokenDto;
 
 /**
  *

@@ -1,15 +1,15 @@
-<?php namespace ReaZzon\JWTAuth\Classes\Guards;
+<?php namespace Prhost\JWTAuth\Classes\Guards;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 use October\Rain\Auth\Models\User;
-use ReaZzon\JWTAuth\Classes\Contracts\UserPluginResolver;
+use Prhost\JWTAuth\Classes\Contracts\UserPluginResolver;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 use PHPOpenSourceSaver\JWTAuth\JWTGuard as JWTGuardBase;
-use ReaZzon\JWTAuth\Classes\Behaviors\UserSubjectBehavior;
+use Prhost\JWTAuth\Classes\Behaviors\UserSubjectBehavior;
 
 /**
  * Class JWTGuard
- * @package ReaZzon\JwtUser\Classes\Guards
+ * @package Prhost\JwtUser\Classes\Guards
  */
 class JWTGuard extends JWTGuardBase
 {

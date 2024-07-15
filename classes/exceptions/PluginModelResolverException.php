@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes\Exception;
+namespace Prhost\JWTAuth\Classes\Exception;
 
 use October\Rain\Exception\SystemException;
 

@@ -11,7 +11,7 @@
     stopOnFailure="false"
 >
     <testsuites>
-        <testsuite name="reazzon.jwtauth">
+        <testsuite name="prhost.jwtauth">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

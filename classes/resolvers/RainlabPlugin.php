@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes\Resolvers;
+namespace Prhost\JWTAuth\Classes\Resolvers;
 
 use RainLab\User\Models\User as RainlabUserModel;
-use ReaZzon\JWTAuth\Classes\Contracts\Plugin;
-use ReaZzon\JWTAuth\Classes\Exception\PluginModelResolverException;
+use Prhost\JWTAuth\Classes\Contracts\Plugin;
+use Prhost\JWTAuth\Classes\Exception\PluginModelResolverException;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 use Model;
 

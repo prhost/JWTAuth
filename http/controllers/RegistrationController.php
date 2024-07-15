@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Http\Controllers;
+namespace Prhost\JWTAuth\Http\Controllers;
 
-use ReaZzon\JWTAuth\Http\Requests\RegistrationRequest;
-use ReaZzon\JWTAuth\Http\Resources\TokenResource;
+use Prhost\JWTAuth\Http\Requests\RegistrationRequest;
+use Prhost\JWTAuth\Http\Resources\TokenResource;
 
 /**
  *

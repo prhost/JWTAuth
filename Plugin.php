@@ -1,23 +1,23 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth;
+namespace Prhost\JWTAuth;
 
 use Event, Config;
 use System\Classes\PluginBase;
-use ReaZzon\JWTAuth\Classes\UserPluginResolver;
-use ReaZzon\JWTAuth\Classes\Contracts\UserPluginResolver as UserPluginResolverContract;
+use Prhost\JWTAuth\Classes\UserPluginResolver;
+use Prhost\JWTAuth\Classes\Contracts\UserPluginResolver as UserPluginResolverContract;
 
 use Illuminate\Auth\Access\Gate;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 
-use ReaZzon\JWTAuth\Classes\Guards\JWTGuard;
-use ReaZzon\JWTAuth\Classes\Providers\UserProvider;
+use Prhost\JWTAuth\Classes\Guards\JWTGuard;
+use Prhost\JWTAuth\Classes\Providers\UserProvider;
 
 use Lovata\Buddies\Models\User;
-use ReaZzon\JWTAuth\Classes\Events\UserModelHandler;
+use Prhost\JWTAuth\Classes\Events\UserModelHandler;
 
 use System\Classes\PluginManager;
 use PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider;
@@ -37,7 +37,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'JWTAuth',
             'description' => 'JWT authorization plugin',
-            'author'      => 'ReaZzon, LeMaX10',
+            'author'      => 'Prhost, LeMaX10',
             'icon'        => 'icon-leaf'
         ];
     }
@@ -83,7 +83,7 @@ class Plugin extends PluginBase
         }
 
         if (!$pluginInstalled) {
-            PluginManager::instance()->disablePlugin('ReaZzon.JWTAuth');
+            PluginManager::instance()->disablePlugin('Prhost.JWTAuth');
         }
     }
 
@@ -153,7 +153,7 @@ class Plugin extends PluginBase
                 'description' => 'Manage user based settings.',
                 'category'    => 'JWTAuth',
                 'icon'        => 'icon-cog',
-                'class'       => \ReaZzon\JWTAuth\Models\BuddiesSettings::class,
+                'class'       => \Prhost\JWTAuth\Models\BuddiesSettings::class,
                 'order'       => 500,
                 'keywords'    => 'buddies users',
                 'permissions' => ['buddies-menu-*']

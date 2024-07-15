@@ -1,4 +1,4 @@
-<?php namespace ReaZzon\JWTAuth\Tests;
+<?php namespace Prhost\JWTAuth\Tests;
 
 use PluginTestCase;
 

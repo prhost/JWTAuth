@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes\Resolvers;
+namespace Prhost\JWTAuth\Classes\Resolvers;
 
 use Model;
 use Lovata\Buddies\Models\User;
@@ -10,10 +10,10 @@ use Lovata\Buddies\Components\Registration;
 use Lovata\Toolbox\Classes\Helper\SendMailHelper;
 use Lovata\Toolbox\Models\Settings;
 use Lovata\Buddies\Models\User as BuddiesUserModel;
-use ReaZzon\JWTAuth\Models\BuddiesSettings;
+use Prhost\JWTAuth\Models\BuddiesSettings;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
-use ReaZzon\JWTAuth\Classes\Contracts\Plugin;
-use ReaZzon\JWTAuth\Classes\Exception\PluginModelResolverException;
+use Prhost\JWTAuth\Classes\Contracts\Plugin;
+use Prhost\JWTAuth\Classes\Exception\PluginModelResolverException;
 
 /**
  *

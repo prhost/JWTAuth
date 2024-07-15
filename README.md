@@ -12,7 +12,7 @@ This plugin adds to your application functionality to authenticate with JWT toke
 
 1. Install plugin via terminal in your enviroment:
 ```bash
-php artisan plugin:install ReaZzon.JWTAuth
+php artisan plugin:install Prhost.JWTAuth
 ```
 
 2. Generate JWT Secret:
@@ -25,7 +25,7 @@ php artisan jwt:secret
 To use JWT Middleware, put `ResolveUser` middleware in your routes. Example below:
 
 ```php
-Route::group(['middleware' => [\ReaZzon\JWTAuth\Http\Middlewares\ResolveUser::class]], function () {
+Route::group(['middleware' => [\Prhost\JWTAuth\Http\Middlewares\ResolveUser::class]], function () {
 
   // Routes only for authenticated users
   
@@ -39,7 +39,7 @@ Route::get('account', function () {
 
    // Logic that should be available only for authenticated users
    
-})->middleware(\ReaZzon\JWTAuth\Http\Middlewares\ResolveUser::class);
+})->middleware(\Prhost\JWTAuth\Http\Middlewares\ResolveUser::class);
 ```
 
 ## Routes

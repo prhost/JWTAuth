@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
-namespace ReaZzon\JWTAuth\Classes\Behaviors;
+namespace Prhost\JWTAuth\Classes\Behaviors;
 
 use October\Rain\Database\ModelBehavior;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 
 /**
  * Class UserSubjectBehavior
- * @package ReaZzon\JWTAuth\Classes\Behaviors
+ * @package Prhost\JWTAuth\Classes\Behaviors
  */
 class UserSubjectBehavior extends ModelBehavior implements JWTSubject
 {

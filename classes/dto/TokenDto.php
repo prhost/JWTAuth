@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace ReaZzon\JWTAuth\Classes\Dto;
+namespace Prhost\JWTAuth\Classes\Dto;
 
 use October\Rain\Argon\Argon;
 use October\Rain\Auth\Models\User;
