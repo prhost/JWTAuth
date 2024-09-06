@@ -27,6 +27,9 @@ use PHPOpenSourceSaver\JWTAuth\Providers\LaravelServiceProvider;
  */
 class Plugin extends PluginBase
 {
+
+    public $require = ['RainLab.User'];
+
     /**
      * Returns information about this plugin.
      *
@@ -93,7 +96,7 @@ class Plugin extends PluginBase
     private function registerConfigs()
     {
         $pluginNamespace = str_replace('\\', '.', strtolower(__NAMESPACE__));
-        $packages = Config::get($pluginNamespace . '::packages');
+        $packages = (array)Config::get($pluginNamespace . '::packages');
 
         foreach ($packages as $name => $options) {
             if (!empty($options['config']) && !empty($options['config_namespace'])) {
