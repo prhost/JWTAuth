@@ -2,7 +2,7 @@
 
 return [
     [
-        'name'     => 'Rainlab.User',
+        'name'     => 'RainLab.User',
         'model'    => 'RainLab\User\Models\User',
         'resolver' => \Prhost\JWTAuth\Classes\Resolvers\RainlabPlugin::class,
         'provider' => 'user.auth',

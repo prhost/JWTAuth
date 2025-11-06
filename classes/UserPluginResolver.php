@@ -29,15 +29,21 @@ final class UserPluginResolver implements UserPluginResolverContract
     public function init(): void
     {
         $plugins = $this->getSupportPlugins();
+        
         foreach($plugins as $plugin) {
-            if (PluginManager::instance()->hasPlugin($plugin['name'])) {
+            // Verifica se a classe do modelo existe em vez de verificar se é um plugin real
+            // Isso permite usar identificadores personalizados como Metastore.Api.Backend
+            if (class_exists($plugin['model'])) {
                 $this->plugin = $plugin;
                 break;
             }
         }
 
         if (empty($this->plugin)) {
-            throw new \SystemException('No required plugins found in system');
+            $models = implode(', ', array_column($plugins, 'model'));
+            throw new \SystemException(
+                "No valid user model found. Searched for models: [{$models}]"
+            );
         }
     }
 

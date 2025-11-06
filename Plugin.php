@@ -52,11 +52,16 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-        $this->checkRequiredPlugins();
-
+        // Registra o singleton, mas não instancia ainda (lazy loading)
         $this->app->singleton(
             UserPluginResolverContract::class,
             static fn() => UserPluginResolver::instance()
+        );
+
+        // Alias para a classe JWTAuth do pacote php-open-source-saver/jwt-auth
+        $this->app->alias(
+            \PHPOpenSourceSaver\JWTAuth\JWTAuth::class,
+            \Prhost\JWTAuth\Classes\JWTAuth::class
         );
 
         $this->registerGates();
@@ -70,6 +75,9 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
+        // Inicializa o UserPluginResolver agora que todos os plugins foram carregados
+        app(UserPluginResolverContract::class);
+
         $this->registerConfigs();
         $this->addEventListeners();
     }
