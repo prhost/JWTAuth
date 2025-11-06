@@ -52,7 +52,7 @@ Route::get('account', function () {
 ## Suggestions, Ideas, Issues, Bugs
 
 
-We are open to your suggestions and ideas in public repository of this plugin [GitHub](https://github.com/FlusherDock1/JWTAuth)
+We are open to your suggestions and ideas in public repository of this plugin [GitHub](https://github.com/FlusherDock1/JWTAuth).
 
 
 ---
