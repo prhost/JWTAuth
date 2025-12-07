@@ -140,4 +140,16 @@ class UserProvider implements BaseUserProvider
     {
         return false;
     }
+
+    /**
+     * Rehash the user's password if required and supported.
+     *
+     * @param Authenticatable $user
+     * @param array $credentials
+     * @return void
+     */
+    public function rehashPasswordIfRequired(Authenticatable $user, array $credentials, bool $force = false): void
+    {
+        // JWT Auth doesn't use password validation, so this is a no-op
+    }
 }
